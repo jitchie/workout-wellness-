@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
+
 //create a connection instance 
 mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/workoutdb", {
     useNewUrlParser: true, 
