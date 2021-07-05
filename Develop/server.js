@@ -10,7 +10,7 @@ const routes = require('./public/routes')
 //create a port to listen on
 const PORT = process.env.PORT || 3000;
 
-const User = require("../Develop/public/model/model.js");
+
 
 //assign express to a variable to use to configer our server.
 const app = express();
