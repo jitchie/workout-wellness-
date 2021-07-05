@@ -12,8 +12,6 @@ const app = express();
 //app.use middleware for POST and GET data
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-
 app.use(express.static("public"));
 
 
@@ -29,8 +27,8 @@ db.on('error', (error) => console.error(error));
 db.once('open', () => console.log('connected to workoutdb'));
 
 //directs express app to routes, where we can link HTML POST and GET
-app.use('./routes/htmlrouter.js');
-app.use('./routes/api/apirouter.js');
+app.use(require('./routes/htmlrouter.js'));
+// app.use('./routes/api/apirouter.js');
 
 
 
