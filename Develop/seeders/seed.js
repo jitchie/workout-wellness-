@@ -10,7 +10,7 @@ mongoose.connect('mongodb://localhost/workout', {
 const workoutSeed = [
   {
     day: new Date(new Date().setDate(new Date().getDate() - 9)),
-    exercises: [
+    exercises: [ //an array
       {
         type: 'resistance',
         name: 'Bicep Curl',

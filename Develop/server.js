@@ -28,7 +28,7 @@ db.on('error', (error) => console.error(error));
 db.once('open', () => console.log('connected to workoutdb'));
 
 //directs express app to routes, where we can link HTML POST and GET
-app.use(require('./routes/htmlrouter.js'));
+app.use(require('./routes'));
 // app.use('./routes/api/apirouter.js');
 
 
