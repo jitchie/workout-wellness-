@@ -5,8 +5,7 @@ const workoutroute =require("./workoutrouter.js");
 
 // .use (pathname) with variable to point to file.
 router.use("/workouts", workoutroute);
-router.get('/', getWorkouts)
-router.get('/range', getWorkouts)
+
 
 
 
