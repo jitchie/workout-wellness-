@@ -1,10 +1,10 @@
 const router = require("express").Router();
 const db = require('../../model/workout.js')
-const workoutroute =require("./workoutrouter.js");
+const workoutrouter = require("./apiRouter.js");
 
 
-// .use (pathname) with variable to point to file.
-router.use("/workouts", workoutroute);
+// .use (end point) with variable to point to file.js name
+router.use("/api", apiRouter);
 
 
 
